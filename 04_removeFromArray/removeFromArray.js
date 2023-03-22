@@ -2,7 +2,7 @@ const removeFromArray = function(theArray, ...theArgs) {
 
     for (const arg of theArgs){
         if (typeof theArray[theArray.indexOf(arg)] === 'undefined'){
-            break
+            continue
         } else {
         theArray.splice(theArray.indexOf(arg), 1)
         }
