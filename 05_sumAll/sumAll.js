@@ -2,7 +2,7 @@ const sumAll = function(a, b) {
 let finalSum 
 let sum = 0
 
-    if (a < 0 || b < 0){
+    if (a < 0 || b < 0 || typeof a != 'number' || typeof b != 'number'){
         return 'ERROR'
     }else if (a < b){
         for (let i=a; i <= b; i++){
