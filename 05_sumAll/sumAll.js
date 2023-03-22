@@ -1,9 +1,18 @@
 const sumAll = function(a, b) {
 let finalSum 
 let sum = 0
- for (let i=a; i <= b; i++){
-    sum = sum + i
- }
+
+
+    if (a < b){
+        for (let i=a; i <= b; i++){
+            sum = sum + i
+        }
+    } else if (a > b) {
+        for (let i=a; i >= b; i--){
+            sum = sum + i
+        }
+    }
+    
 return sum
 };
 
