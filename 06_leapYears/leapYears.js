@@ -1,13 +1,13 @@
 const leapYears = function(year) {
 
     //leap century 
-    if (year % 4 === 0){
+    if (year % 400 === 0){
         return true
-     }else if (year % 4 === 0 && year % 100 === 0){
-        return true
-    } else if (year % 100 === 0 && year % 4 != 0){
+     }else if (year % 100 === 0){
         return false
-     }else  {
+     }else if (year % 4 === 0){
+        return true
+    } else  {
         return false
      }
     //leap year
